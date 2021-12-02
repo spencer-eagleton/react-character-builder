@@ -1,6 +1,6 @@
 import './Picker.css';
 
-export default function Picker(head, setHead, middle, setMiddle, pants, setPants) {
+export default function Picker(head, setHead, middle, setMiddle, pants, setPants, text, setText) {
   return (
     <div className="picker">
       <div className="form-control">
@@ -29,6 +29,10 @@ export default function Picker(head, setHead, middle, setMiddle, pants, setPants
           <option value="leg-pants">Leg Pants</option>
           <option value="white-pants">White Pants</option>
         </select>
+      </div>
+      <div className="form-control">
+        <label>Catch Phrase: </label>
+        <input type="text" />
       </div>
     </div>
   );
