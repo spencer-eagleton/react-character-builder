@@ -1,10 +1,11 @@
 import './App.css';
 
 import Home from './views/Home/Home';
+import background from './background.jpeg';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ backgroundImage: `url(${background})` }} className="App">
       <Home />
     </div>
   );

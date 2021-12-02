@@ -1,4 +1,11 @@
 main {
-  background-size: cover;
-  height: 800px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.479) 2px 2px 20px;
+  max-width: 800px;
+  height: 600px;
+  position: relative;
+  top: 10px;
+  margin: auto;
+  backdrop-filter: blur(5px);
+  background-color: rgba(37, 37, 37, 0.082);
 }
