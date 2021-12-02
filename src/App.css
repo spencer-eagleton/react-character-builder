@@ -37,7 +37,7 @@
   }
 }
 
-div {
+.body {
   background-size: cover;
   height: 800px;
 }
