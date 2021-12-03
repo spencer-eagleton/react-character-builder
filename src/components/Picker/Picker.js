@@ -10,15 +10,20 @@ export default function Picker({
   text,
   setText,
   setTextList,
+  setHeadCount,
 }) {
   const handleTextList = () => {
     setTextList((prevState) => [...prevState, text]);
+  };
+  const handleHead = (e) => {
+    setHead(e.target.value);
+    setHeadCount((prevState) => prevState + 1);
   };
   return (
     <div className="picker">
       <div className="form-control">
         <label>Head: </label>
-        <select value={head} onChange={(e) => setHead(e.target.value)}>
+        <select value={head} onChange={handleHead}>
           <option value="bird-head">Bird Head</option>
           <option value="dog-head">Dog Head</option>
           <option value="duck-head">Duck Head</option>

@@ -11,6 +11,9 @@ export default function Home() {
   const [pants, setPants] = useState('');
   const [text, setText] = useState('');
   const [textList, setTextList] = useState([]);
+  const [headCount, setHeadCount] = useState(0);
+  const [middleCount, setMiddleCount] = useState(0);
+
   return (
     <main>
       <Picker
@@ -25,6 +28,10 @@ export default function Home() {
           setText,
           textList,
           setTextList,
+          headCount,
+          setHeadCount,
+          middleCount,
+          setMiddleCount,
         }}
       />
       <Character
@@ -41,6 +48,8 @@ export default function Home() {
           setTextList,
         }}
       />
+      <p>You have changed the head {headCount} times. </p>
+      <p></p>
     </main>
   );
 }
