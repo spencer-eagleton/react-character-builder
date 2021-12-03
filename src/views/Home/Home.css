@@ -2,11 +2,25 @@ main {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.479) 2px 2px 20px;
   max-width: 800px;
-  height: 600px;
+  height: 675px;
   position: relative;
   top: 10px;
   margin: auto;
   backdrop-filter: blur(5px);
   background-color: rgba(37, 37, 37, 0.082);
   display: flex;
+  flex-direction: column;
+  color: rgb(255, 185, 98);
+}
+
+.upper {
+  display: flex;
+}
+
+div.picker,
+div.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

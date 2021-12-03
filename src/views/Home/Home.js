@@ -17,43 +17,47 @@ export default function Home() {
 
   return (
     <main>
-      <Picker
-        {...{
-          head,
-          setHead,
-          middle,
-          setMiddle,
-          pants,
-          setPants,
-          text,
-          setText,
-          textList,
-          setTextList,
-          headCount,
-          setHeadCount,
-          middleCount,
-          setMiddleCount,
-          pantsCount,
-          setPantsCount,
-        }}
-      />
-      <Character
-        {...{
-          head,
-          setHead,
-          middle,
-          setMiddle,
-          pants,
-          setPants,
-          text,
-          setText,
-          textList,
-          setTextList,
-        }}
-      />
-      <p>You have changed the head {headCount} times.</p>
-      <p>You have changed the middle {middleCount} times.</p>
-      <p>You have changed the pants {pantsCount} times.</p>
+      <div className="upper">
+        <Picker
+          {...{
+            head,
+            setHead,
+            middle,
+            setMiddle,
+            pants,
+            setPants,
+            text,
+            setText,
+            textList,
+            setTextList,
+            headCount,
+            setHeadCount,
+            middleCount,
+            setMiddleCount,
+            pantsCount,
+            setPantsCount,
+          }}
+        />
+        <Character
+          {...{
+            head,
+            setHead,
+            middle,
+            setMiddle,
+            pants,
+            setPants,
+            text,
+            setText,
+            textList,
+            setTextList,
+          }}
+        />
+      </div>
+      <div>
+        <p>You have changed the head {headCount} times.</p>
+        <p>You have changed the middle {middleCount} times.</p>
+        <p>You have changed the pants {pantsCount} times.</p>
+      </div>
     </main>
   );
 }

@@ -1,5 +1,9 @@
 .picker {
   width: 400px;
   height: 500px;
-  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(202, 202, 202, 0.075);
+}
+.form-control {
+  margin: 10px;
 }
