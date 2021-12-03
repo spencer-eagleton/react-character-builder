@@ -11,6 +11,9 @@ export default function Picker({
   setText,
   setTextList,
   setHeadCount,
+  setMiddleCount,
+  setPantsCount,
+  pantsCount,
 }) {
   const handleTextList = () => {
     setTextList((prevState) => [...prevState, text]);
@@ -18,6 +21,14 @@ export default function Picker({
   const handleHead = (e) => {
     setHead(e.target.value);
     setHeadCount((prevState) => prevState + 1);
+  };
+  const handleMiddle = (e) => {
+    setMiddle(e.target.value);
+    setMiddleCount((prevState) => prevState + 1);
+  };
+  const handlePants = (e) => {
+    setPants(e.target.value);
+    setPantsCount(++pantsCount);
   };
   return (
     <div className="picker">
@@ -32,7 +43,7 @@ export default function Picker({
       </div>
       <div className="form-control">
         <label>Middle: </label>
-        <select value={middle} onChange={(e) => setMiddle(e.target.value)}>
+        <select value={middle} onChange={handleMiddle}>
           <option value="blue-middle">Blue Middle</option>
           <option value="dress-middle">Dress Middle</option>
           <option value="pink-middle">Pink Middle</option>
@@ -41,7 +52,7 @@ export default function Picker({
       </div>
       <div className="form-control">
         <label>Pants: </label>
-        <select value={pants} onChange={(e) => setPants(e.target.value)}>
+        <select value={pants} onChange={handlePants}>
           <option value="blue-pants">Blue Pants</option>
           <option value="dog-pants">Dog Pants</option>
           <option value="leg-pants">Leg Pants</option>

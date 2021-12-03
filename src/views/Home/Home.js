@@ -13,6 +13,7 @@ export default function Home() {
   const [textList, setTextList] = useState([]);
   const [headCount, setHeadCount] = useState(0);
   const [middleCount, setMiddleCount] = useState(0);
+  const [pantsCount, setPantsCount] = useState(0);
 
   return (
     <main>
@@ -32,6 +33,8 @@ export default function Home() {
           setHeadCount,
           middleCount,
           setMiddleCount,
+          pantsCount,
+          setPantsCount,
         }}
       />
       <Character
@@ -48,8 +51,9 @@ export default function Home() {
           setTextList,
         }}
       />
-      <p>You have changed the head {headCount} times. </p>
-      <p></p>
+      <p>You have changed the head {headCount} times.</p>
+      <p>You have changed the middle {middleCount} times.</p>
+      <p>You have changed the pants {pantsCount} times.</p>
     </main>
   );
 }
