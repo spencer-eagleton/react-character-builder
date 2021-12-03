@@ -11,6 +11,7 @@ main {
   display: flex;
   flex-direction: column;
   color: rgb(255, 185, 98);
+  padding: 20px;
 }
 
 .upper {
