@@ -6,9 +6,9 @@ import Character from '../../components/Character/Character';
 import './Home.css';
 
 export default function Home() {
-  const [head, setHead] = useState('');
-  const [middle, setMiddle] = useState('');
-  const [pants, setPants] = useState('');
+  const [head, setHead] = useState('empty');
+  const [middle, setMiddle] = useState('empty');
+  const [pants, setPants] = useState('empty');
   const [text, setText] = useState('');
   const [textList, setTextList] = useState([]);
   const [headCount, setHeadCount] = useState(0);
