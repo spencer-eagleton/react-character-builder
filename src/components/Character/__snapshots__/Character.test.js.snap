@@ -7,13 +7,43 @@ Object {
     <div>
       <div
         class="character"
-      />
+      >
+        <img
+          src="/assets/Head.png"
+          width="100px"
+        />
+        <img
+          src="/assets/undefined.png"
+          width="100px"
+        />
+        <img
+          src="/assets/undefined.png"
+          width="100px"
+        />
+        <span />
+        <span />
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="character"
-    />
+    >
+      <img
+        src="/assets/Head.png"
+        width="100px"
+      />
+      <img
+        src="/assets/undefined.png"
+        width="100px"
+      />
+      <img
+        src="/assets/undefined.png"
+        width="100px"
+      />
+      <span />
+      <span />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
