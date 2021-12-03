@@ -9,6 +9,8 @@ export default function Home() {
   const [head, setHead] = useState('');
   const [middle, setMiddle] = useState('');
   const [pants, setPants] = useState('');
+  const [text, setText] = useState('');
+  const [textList, setTextList] = useState([]);
   return (
     <main>
       <Picker
@@ -19,6 +21,10 @@ export default function Home() {
           setMiddle,
           pants,
           setPants,
+          text,
+          setText,
+          textList,
+          setTextList,
         }}
       />
       <Character
@@ -29,6 +35,10 @@ export default function Home() {
           setMiddle,
           pants,
           setPants,
+          text,
+          setText,
+          textList,
+          setTextList,
         }}
       />
     </main>

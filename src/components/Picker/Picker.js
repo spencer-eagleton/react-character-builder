@@ -1,6 +1,19 @@
 import './Picker.css';
 
-export default function Picker(head, setHead, middle, setMiddle, pants, setPants, text, setText) {
+export default function Picker({
+  head,
+  setHead,
+  middle,
+  setMiddle,
+  pants,
+  setPants,
+  text,
+  setText,
+  setTextList,
+}) {
+  const handleTextList = () => {
+    setTextList((prevState) => [...prevState, text]);
+  };
   return (
     <div className="picker">
       <div className="form-control">
@@ -32,7 +45,8 @@ export default function Picker(head, setHead, middle, setMiddle, pants, setPants
       </div>
       <div className="form-control">
         <label>Catch Phrase: </label>
-        <input type="text" />
+        <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+        <button onClick={handleTextList}>Submit</button>
       </div>
     </div>
   );
